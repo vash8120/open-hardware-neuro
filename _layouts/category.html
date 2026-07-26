@@ -1,0 +1,33 @@
+---
+layout: default
+---
+{% assign cat = site.categories | where: "key", page.category | first %}
+
+<a class="back-link" href="{{ '/' | relative_url }}">← All topics</a>
+
+<h1 class="page-title">{{ cat.name }}</h1>
+{% if cat.blurb %}<p class="lede">{{ cat.blurb }}</p>{% endif %}
+
+{% assign items = site.tools | where: "category", page.category | sort: "order" %}
+
+{% if items.size == 0 %}
+  <p class="empty">Tools coming soon.</p>
+{% else %}
+  <div class="card-grid">
+    {% for tool in items %}
+      <a class="card" href="{{ tool.url | relative_url }}">
+        <div class="card-thumb">
+          {% if tool.images and tool.images.first %}
+            <img src="{{ tool.images.first | relative_url }}" alt="{{ tool.title }}" loading="lazy">
+          {% else %}
+            <img src="{{ '/assets/img/placeholder.svg' | relative_url }}" alt="">
+          {% endif %}
+        </div>
+        <div class="card-body">
+          <h2>{{ tool.title }}</h2>
+          {% if tool.summary %}<p>{{ tool.summary }}</p>{% endif %}
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+{% endif %}

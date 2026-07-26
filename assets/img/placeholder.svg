@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Placeholder image">
+  <rect width="400" height="300" fill="#eef1f5"/>
+  <rect x="0.5" y="0.5" width="399" height="299" fill="none" stroke="#d3d9e0"/>
+  <g fill="#aab3c0">
+    <circle cx="150" cy="120" r="26"/>
+    <path d="M70 235 L165 150 L215 200 L265 160 L340 235 Z"/>
+  </g>
+  <text x="200" y="272" text-anchor="middle" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="16" fill="#8a94a3">Add photo here</text>
+</svg>

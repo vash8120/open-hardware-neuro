@@ -1,0 +1,60 @@
+# ============================================================
+#  Site configuration
+# ------------------------------------------------------------
+#  EDIT THESE for your poster / lab.
+# ============================================================
+title: "Open Hardware Tools for Neuroethology"
+tagline: "Open-source behavior, electrophysiology, and imaging tools — build notes and files."
+description: "Open hardware tools for neuroethology: behavior, electrophysiology, and imaging. Photos, build notes, and build files."
+footer_note: "Open Hardware Tools for Neuroethology · built with Jekyll on GitHub Pages"
+
+# ------------------------------------------------------------
+#  IMPORTANT for GitHub Pages "project" sites
+#  (i.e. https://USERNAME.github.io/REPO-NAME/)
+#
+#  Set baseurl to "/REPO-NAME" (with the leading slash).
+#  If you use a custom domain or a user site
+#  (https://USERNAME.github.io), leave baseurl as "".
+# ------------------------------------------------------------
+baseurl: "/open-hardware-neuro"
+url: "https://vash8120.github.io"
+
+# ------------------------------------------------------------
+#  Categories shown on the landing page (order matters).
+#  "key" must match the `category:` field in each tool file.
+# ------------------------------------------------------------
+categories:
+  - key: behavior
+    name: "Behavior"
+    blurb: "Apparatus and rigs for behavioral experiments."
+  - key: electrophysiology
+    name: "Electrophysiology"
+    blurb: "Hardware for recording and stimulation."
+  - key: imaging
+    name: "Imaging"
+    blurb: "Optics, mounts, and imaging hardware."
+
+# ------------------------------------------------------------
+#  Collections — one markdown file per tool in _tools/
+# ------------------------------------------------------------
+collections:
+  tools:
+    output: true
+    permalink: /tools/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: tools
+    values:
+      layout: tool
+      build_status: coming_soon   # shows the "Build files coming soon" banner
+
+# Build settings
+markdown: kramdown
+theme: null
+plugins: []
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

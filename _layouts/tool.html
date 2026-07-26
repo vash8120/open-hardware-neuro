@@ -1,0 +1,39 @@
+---
+layout: default
+---
+{% assign cat = site.categories | where: "key", page.category | first %}
+
+<a class="back-link" href="{{ '/' | append: page.category | append: '/' | relative_url }}">← {{ cat.name }}</a>
+
+<h1 class="page-title">{{ page.title }}</h1>
+{% if page.summary %}<p class="lede">{{ page.summary }}</p>{% endif %}
+
+{% if page.images and page.images.size > 0 %}
+  <div class="gallery">
+    {% for img in page.images %}
+      <figure>
+        <img src="{{ img | relative_url }}" alt="{{ page.title }}" loading="lazy">
+      </figure>
+    {% endfor %}
+  </div>
+{% endif %}
+
+<section class="build-notes">
+  <h2>Build notes</h2>
+  {{ content }}
+</section>
+
+<section class="build-files">
+  {% if page.build_status == "available" %}
+    <h2>Build files</h2>
+    <p>{{ page.build_files_note | default: "Files are available below." }}</p>
+    {% if page.build_files_url %}
+      <a class="button" href="{{ page.build_files_url }}">Download build files</a>
+    {% endif %}
+  {% else %}
+    <div class="soon">
+      <h2>Build files — coming soon</h2>
+      <p>Full build files (CAD, BOM, code, and instructions) for this tool will be posted here.</p>
+    </div>
+  {% endif %}
+</section>
