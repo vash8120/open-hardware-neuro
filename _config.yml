@@ -3,10 +3,16 @@
 # ------------------------------------------------------------
 #  EDIT THESE for your poster / lab.
 # ============================================================
-title: "Open Hardware Tools for Neuroethology"
-tagline: "Open-source behavior, electrophysiology, and imaging tools — build notes and files."
-description: "Open hardware tools for neuroethology: behavior, electrophysiology, and imaging. Photos, build notes, and build files."
-footer_note: "Open Hardware Tools for Neuroethology · built with Jekyll on GitHub Pages"
+title: "An Open-Hardware Workflow for Insect Neuroethology"
+byline: "Varun Sharma · Lu Lab, Georgia Tech · ICN 2026"
+tagline: "Behavior, electrophysiology and imaging tools for insect neuroethology."
+description: "Open hardware tools for insect neuroethology: behavior, electrophysiology, and imaging. Photos, build notes, and build files."
+status_note: "Build files and documentation coming late 2026."
+# Paste your Google Form (or any) link here to enable the notify button.
+# Leave it blank ("") to hide the button.
+notify_url: "YOUR_GOOGLE_FORM_LINK"
+notify_text: "Get notified when files are released"
+footer_note: "Varun Sharma · Lu Lab, Georgia Tech · built with Jekyll on GitHub Pages"
 
 # ------------------------------------------------------------
 #  IMPORTANT for GitHub Pages "project" sites
