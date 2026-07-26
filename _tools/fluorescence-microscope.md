@@ -4,7 +4,11 @@ category: imaging
 order: 1
 summary: "Modular 3D-printed epifluorescence microscope built on OpenUC2."
 images:
-  - /assets/img/placeholder.svg
+  - /assets/img/imaging/fluorescence-microscope-1.jpg
+  - /assets/img/imaging/fluorescence-microscope-2.jpg
+  - /assets/img/imaging/fluorescence-microscope-3.jpg
+  - /assets/img/imaging/fluorescence-microscope-4.jpg
+  - /assets/img/imaging/fluorescence-microscope-5.jpg
 build_status: coming_soon
 ---
 

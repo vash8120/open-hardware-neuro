@@ -4,7 +4,8 @@ category: electrophysiology
 order: 2
 summary: "Single-channel intracellular electrometer for fly and moth recordings."
 images:
-  - /assets/img/placeholder.svg
+  - /assets/img/electrophysiology/amplifier-1.jpg
+  - /assets/img/electrophysiology/amplifier-2.jpg
 build_status: coming_soon
 ---
 

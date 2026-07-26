@@ -5,7 +5,10 @@ order: 1
 summary: "Strain-gauge force transducers for tethered moth flight — single- and multi-axis."
 # Photos go in assets/img/behavior/ — filenames added when uploaded.
 images:
-  - /assets/img/placeholder.svg
+  - /assets/img/behavior/force-transducer-1.jpg
+  - /assets/img/behavior/force-transducer-2.jpg
+  - /assets/img/behavior/force-transducer-3.jpg
+  - /assets/img/behavior/force-transducer-4.jpg
 build_status: coming_soon
 ---
 

@@ -4,7 +4,14 @@ category: electrophysiology
 order: 1
 summary: "Low-cost micro/nano-positioners for electrode placement — stick-slip and parallel 3-axis."
 images:
-  - /assets/img/placeholder.svg
+  - /assets/img/electrophysiology/positioners-1.jpg
+  - /assets/img/electrophysiology/positioners-2.jpg
+  - /assets/img/electrophysiology/positioners-3.jpg
+  - /assets/img/electrophysiology/positioners-4.jpg
+  - /assets/img/electrophysiology/positioners-5.jpg
+  - /assets/img/electrophysiology/positioners-6.jpg
+  - /assets/img/electrophysiology/positioners-7.jpg
+  - /assets/img/electrophysiology/positioners-8.jpg
 build_status: coming_soon
 ---
 
