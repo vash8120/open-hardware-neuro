@@ -3,6 +3,7 @@ layout: default
 ---
 <section class="hero">
   <h1>{{ site.title }}</h1>
+  {% if site.byline %}<p class="byline">{{ site.byline }}</p>{% endif %}
   <p class="lede">{{ site.tagline }}</p>
 </section>
 
@@ -17,3 +18,12 @@ layout: default
     </a>
   {% endfor %}
 </div>
+
+{% if site.status_note or site.notify_url != "" %}
+<section class="notice">
+  {% if site.status_note %}<p class="status">{{ site.status_note }}</p>{% endif %}
+  {% if site.notify_url and site.notify_url != "" and site.notify_url != "YOUR_GOOGLE_FORM_LINK" %}
+    <a class="button" href="{{ site.notify_url }}">{{ site.notify_text }}</a>
+  {% endif %}
+</section>
+{% endif %}
