@@ -12,7 +12,7 @@
     <div class="wrap">
       <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
       <nav class="site-nav">
-        {% for cat in site.categories %}
+        {% for cat in site.topics %}
           <a href="{{ '/' | append: cat.key | append: '/' | relative_url }}">{{ cat.name }}</a>
         {% endfor %}
       </nav>

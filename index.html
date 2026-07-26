@@ -8,7 +8,7 @@ layout: default
 </section>
 
 <div class="card-grid topics">
-  {% for cat in site.categories %}
+  {% for cat in site.topics %}
     <a class="card topic" href="{{ '/' | append: cat.key | append: '/' | relative_url }}">
       <div class="card-body">
         <h2>{{ cat.name }}</h2>

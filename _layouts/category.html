@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% assign cat = site.categories | where: "key", page.category | first %}
+{% assign cat = site.topics | where: "key", page.category | first %}
 
 <a class="back-link" href="{{ '/' | relative_url }}">← All topics</a>
 

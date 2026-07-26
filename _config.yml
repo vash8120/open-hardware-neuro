@@ -26,10 +26,11 @@ baseurl: "/open-hardware-neuro"
 url: "https://vash8120.github.io"
 
 # ------------------------------------------------------------
-#  Categories shown on the landing page (order matters).
+#  Topics shown on the landing page (order matters).
 #  "key" must match the `category:` field in each tool file.
+#  (Named "topics" — "categories" is a reserved word in Jekyll.)
 # ------------------------------------------------------------
-categories:
+topics:
   - key: behavior
     name: "Behavior"
     blurb: "Apparatus and rigs for behavioral experiments."
