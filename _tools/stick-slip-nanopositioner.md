@@ -19,7 +19,7 @@ preparations.
 *(Papers and websites for this tool)*
 
 - [Reference paper](https://doi.org/10.1016/j.ohx.2022.e00317)
-- [Project page / repo](https://www.youtube.com/playlist?list=PLu3g1bSKNvea5Te0lFSqtd8AIK4uVeLH7)
+- [Nanopositioners playlist](https://www.youtube.com/playlist?list=PLu3g1bSKNvea5Te0lFSqtd8AIK4uVeLH7)
 
 ## Overview
 
@@ -31,9 +31,9 @@ preparations.
 
 {% include fig.html img="electrophysiology/nanopositioner-2.jpg" side="left" caption="Add a caption" %}
 
-*(Text about the build wraps to the right of this photo.)*
+*The Hwu stick-slip nanopositioner was originally designed for applications in Atomic Force Microscopy. Its slender footprint and long travel range make it a candidate for micropositioning in electrophysiology. While our implementation is open loop, there are also closed loop implementations in Hwu's work. The electronics in the original paper are deliberately chosen for their exceptionally low cost, and more modern chips and boards can be substituted in future builds. We believe that the main benefit of this design is the small footprint, which may allow for multiple positioners holding electrodes, to be stacked in parallel*
 
-{% include fig.html img="electrophysiology/nanopositioner-3.jpg" caption="Add a caption" %}
+<!-- {% include fig.html img="electrophysiology/nanopositioner-3.jpg" caption="Add a caption" %} -->
 
 ## Stick-slip nanopositioner
 
