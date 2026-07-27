@@ -1,7 +1,7 @@
 ---
 title: "Trackball VR"
 category: behavior
-order: 2
+order: 3
 summary: "Closed-loop virtual-reality trackball arena for walking Drosophila."
 images:
   - /assets/img/behavior/trackball-vr-1.jpg

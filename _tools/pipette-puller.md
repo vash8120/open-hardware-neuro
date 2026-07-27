@@ -1,7 +1,7 @@
 ---
 title: "Pipette Puller"
 category: electrophysiology
-order: 3
+order: 4
 summary: "Novel low-cost micropipette puller for borosilicate glass."
 images:
   - /assets/img/electrophysiology/pipette-puller-1.jpg
