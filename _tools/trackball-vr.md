@@ -21,6 +21,13 @@ build_status: coming_soon
 A virtual-reality trackball rig for walking fruit flies (*Drosophila
 melanogaster*), with closed-loop visual feedback.
 
+## Links
+
+*(Papers and websites for this tool — edit or delete these examples.)*
+
+- [Reference paper](https://example.com)
+- [Project page / repo](https://example.com)
+
 ## Overview
 
 {% include fig.html img="behavior/trackball-vr-1.jpg" side="right" caption="The assembled trackball arena." %}
