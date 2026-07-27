@@ -1,0 +1,15 @@
+{%- comment -%}
+  Inline figure for tool build-notes.
+  Usage in a tool's Markdown body:
+    {% include fig.html img="behavior/trackball-vr-1.jpg" caption="Assembled rig" %}
+  Parameters:
+    img     (required) path under assets/img/  e.g. "electrophysiology/amplifier-1.jpg"
+    caption (optional) text shown under the image
+    side    (optional) "right", "left", or "full" (default). right/left let text wrap beside it.
+    width   (optional) max width for a floated image, e.g. "360px" (default 42% of the column)
+{%- endcomment -%}
+{%- assign side = include.side | default: "full" -%}
+<figure class="fig fig-{{ side }}"{% if include.width %} style="max-width:{{ include.width }}"{% endif %}>
+  <img src="{{ '/assets/img/' | append: include.img | relative_url }}" alt="{{ include.caption | default: include.img | escape }}" loading="lazy">
+  {%- if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif -%}
+</figure>

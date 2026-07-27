@@ -67,6 +67,38 @@ Write your build notes here in plain Markdown.
   headings, `-` for bullets, `1.` for numbered steps.
 - **Delete a tool:** just delete its file.
 
+## 3b. Writing section-wise (photos between / beside your text)
+
+Instead of the strip of photos at the top of a tool page, you can place each
+photo right next to the text about it. Two steps:
+
+1. In the tool's front matter, turn off the top gallery by adding:
+   `gallery: false`
+2. In the notes, drop a photo wherever you want it with this one-liner:
+
+```
+{% include fig.html img="behavior/trackball-vr-1.jpg" caption="What this shows" %}
+```
+
+- `img` is the path **under `assets/img/`** (so `behavior/…`, `electrophysiology/…`,
+  or `imaging/…`). `caption` is optional.
+- Add `side="right"` or `side="left"` to float the photo and let your text wrap
+  beside it. Leave `side` off for a full-width photo with text above/below.
+- Optional `width="360px"` sets the size of a floated photo.
+
+Example — a photo on the right with text flowing beside it:
+
+```
+{% include fig.html img="behavior/trackball-vr-2.jpg" side="right" caption="The ball" %}
+
+Then just write normally here. This paragraph wraps to the left of the photo.
+Start a new "## Heading" whenever you want the next photo to begin a fresh row.
+```
+
+The **Trackball VR** page is already set up this way — open `_tools/trackball-vr.md`
+to see the pattern, and replace the *(italic placeholder)* text with your own.
+On phones, floated photos automatically stack full-width.
+
 ## 4. When build files are ready
 
 In that tool's file, change `build_status: coming_soon` to

@@ -170,6 +170,33 @@ main.wrap { padding-top: 32px; padding-bottom: 8px; }
 .build-notes h2, .build-files h2 { font-size: 1.3rem; margin: 28px 0 10px; }
 .build-notes h3 { font-size: 1.05rem; margin: 20px 0 6px; }
 .build-notes ul, .build-notes ol { padding-left: 22px; }
+/* contain floated figures so borders/sections sit below them */
+.build-notes::after { content: ""; display: block; clear: both; }
+.build-notes h2, .build-notes h3 { clear: both; }
+
+/* ---- Inline figures (image beside / between text) ---- */
+.fig { margin: 4px 0 18px; }
+.fig img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-soft);
+}
+.fig figcaption {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 6px;
+  line-height: 1.4;
+}
+.fig-full { max-width: 100%; }
+.fig-right { float: right; clear: both; max-width: 42%; margin: 4px 0 14px 24px; }
+.fig-left  { float: left;  clear: both; max-width: 42%; margin: 4px 24px 14px 0; }
+@media (max-width: 640px) {
+  .fig-right, .fig-left { float: none; max-width: 100%; margin: 4px 0 18px; }
+}
+.build-files { clear: both; }
 
 /* ---- Build files "coming soon" banner ---- */
 .build-files { margin-top: 8px; }
