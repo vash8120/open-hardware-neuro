@@ -6,9 +6,8 @@ layout: default
 <a class="back-link" href="{{ '/' | append: page.category | append: '/' | relative_url }}">← {{ cat.name }}</a>
 
 <h1 class="page-title">{{ page.title }}</h1>
-{% if page.summary %}<p class="lede">{{ page.summary }}</p>{% endif %}
 
-{% if page.images and page.images.size > 0 and page.gallery != false %}
+{% if page.images and page.images.size > 0 %}
   <div class="gallery">
     {% for img in page.images %}
       <figure>
@@ -19,7 +18,6 @@ layout: default
 {% endif %}
 
 <section class="build-notes">
-  <h2>Build notes</h2>
   {{ content }}
 </section>
 
