@@ -4,8 +4,8 @@ category: behavior
 order: 1
 summary: "Strain-gauge transducer for hawkmoth yaw / sideslip forces."
 images:
-  - /assets/img/behavior/force1axis.png
-  - /assets/img/behavior/force1axis2.png
+  - /assets/img/behavior/force1axis.PNG
+  - /assets/img/behavior/force1axis2.PNG
 ---
 
 ## Links
