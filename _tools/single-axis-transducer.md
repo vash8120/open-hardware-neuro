@@ -3,7 +3,9 @@ title: "Single-axis Force Transducer"
 category: behavior
 order: 1
 summary: "Strain-gauge transducer for hawkmoth yaw / sideslip forces."
-# No photos yet — add files to assets/img/behavior/ and list them here.
+images:
+  - /assets/img/behavior/force1axis.jpg
+  - /assets/img/behavior/force1axis2.jpg
 ---
 
 ## Links
