@@ -13,5 +13,5 @@ images:
 
 *(Papers and websites for this tool)*
 
-- [Reference](https://example.com)
+- [Reference](https://garrettgoss.com/blog/2016/02/quick-and-ugly-pipette-puller.html)
 - [Project page](https://example.com)
