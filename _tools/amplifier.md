@@ -12,5 +12,5 @@ images:
 
 *(Papers and websites for this tool)*
 
-- [Reference](https://example.com)
+- [Reference](https://scholarworks.wmich.edu/masters_theses/5099/)
 - [Project page](https://example.com)
