@@ -18,5 +18,5 @@ images:
 
 *(Papers and websites for this tool)*
 
-- [Reference](https://example.com)
-- [Project page](https://example.com)
+- [Reference](https://doi.org/10.3389/fnbeh.2021.689573)
+- [Project page](https://reiserlab.github.io/Fly-Lab-Gear/)
