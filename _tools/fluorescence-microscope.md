@@ -15,5 +15,5 @@ images:
 
 *(Papers and websites for this tool)*
 
-- [Reference](https://example.com)
-- [Project page](https://example.com)
+- [Reference](https://doi.org/10.7554/eLife.89826.3)
+- [Project page](https://github.com/openUC2/UC2_Fluorescence_microscope)
