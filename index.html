@@ -19,11 +19,7 @@ layout: default
   {% endfor %}
 </div>
 
-{% if site.status_note or site.notify_url != "" %}
 <section class="notice">
-  {% if site.status_note %}<p class="status">{{ site.status_note }}</p>{% endif %}
-  {% if site.notify_url and site.notify_url != "" and site.notify_url != "YOUR_GOOGLE_FORM_LINK" %}
-    <a class="button" href="{{ site.notify_url }}">{{ site.notify_text }}</a>
-  {% endif %}
+  <p class="status">Build files and benchmarks coming soon. Please fill out this form to be notified.</p>
+  <a class="button" href="https://forms.gle/JkYYbcoMUGeqPjzJ6" target="_blank" rel="noopener">Get notified →</a>
 </section>
-{% endif %}
